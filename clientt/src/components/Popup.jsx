@@ -20,7 +20,7 @@ const Popup = ({ setShowPopup, popupContent, setUpdate }) => {
     <div className="backdrop">
       <div className="popup">
         <RxCross1 className="cross" onClick={() => setShowPopup(false)} />
-        <h1>Update ToDo</h1>
+        <h1>Update ToDo..</h1>
 
         <div className="popup__input_holder">
           <input

@@ -11,6 +11,15 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+
+app.use(cors(
+  {
+    origin:["https://vercel.com/abdul-azeez-ns-projects"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+));                   //
+
 // Middleware
 app.use(express.json());
 app.use(cors());
